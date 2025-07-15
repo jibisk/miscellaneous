@@ -1,0 +1,13 @@
+{
+  "menus": [
+    { "name": "Home", "url": "/" },
+    {
+      "name": "Services",
+      "submenu": [
+        { "name": "Web Development", "url": "/services/web" },
+        { "name": "SEO", "url": "/services/seo" }
+      ]
+    },
+    { "name": "About", "url": "/about" }
+  ]
+}
