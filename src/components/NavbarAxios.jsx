@@ -13,10 +13,10 @@ export default function NavbarAxios() {
   // loading api using Axios
   useEffect(() => {
     axios
-      .get("http://localhost:5000/menus") // replace with your real endpoint
+      .get("./menu.json") //./menu.json in public /  http://localhost:5000/menus replace with your real endpoint
       .then((res) => {
-        setMenuItems(res.data);
-        console.log(res.data);
+        // Use the 'menus' array from your JSON
+        setMenuItems(res.data.menus || []);
         setLoading(false);
       })
       .catch((err) => {
